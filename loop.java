@@ -7,14 +7,14 @@ public class loop {
    }
 
    public static void main(String[] var0) throws IOException {
-      Scanner var1 = new Scanner(System.in);
-      int var2 = var1.nextInt();
+      Scanner sc = new Scanner(System.in);
+      int N = sc.nextInt();
 
-      for(int var3 = 1; var3 <= 10; ++var3) {
-         int var4 = var2 * var3;
-         System.out.println("" + var2 + " x " + var3 + " = " + var4);
+      for(int i = 1; i <= 10; i++) {
+         int result = N * i;
+         System.out.println("" + N + " x " + i + " = " + result);
       }
 
-      var1.close();
+      sc.close();
    }
 }
