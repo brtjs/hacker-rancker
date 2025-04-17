@@ -1,13 +1,19 @@
-public class Solution {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        int N = Integer.parseInt(bufferedReader.readLine().trim());
+import java.io.IOException;
+
+import java.util.Scanner;
+
+public class loop {
+    public static void main(String[] args) throws IOException {
+       
+Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
         for (int i = 1; i <= 10; i++) {
             int result = N * i;
             System.out.println(N + " x " + i + " = " + result);
         }
 
-        bufferedReader.close();
+        sc.close();
     }
 }
